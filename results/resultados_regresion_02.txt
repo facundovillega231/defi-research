@@ -1,0 +1,44 @@
+=== SURPLUS BUFFER COMO LEADING INDICATOR DEL DSR ===
+Fecha: 2026-04-13 
+Período: 2020-01-27 a 2025-11-03 
+Semanas analizadas: 138 
+Eventos de cambio DSR: 28 
+
+--- Correlaciones por lag ---
+   lag_semanas correlacion
+1            1  -0.2169250
+2            2  -0.1909746
+3            3  -0.2164952
+4            4  -0.2043466
+5            5  -0.1961823
+6            6  -0.2048708
+7            7  -0.2047659
+8            8  -0.2111870
+9            9  -0.2129559
+10          10  -0.2138036
+11          11  -0.2150000
+12          12  -0.2149205
+
+Lag óptimo: 1 semanas
+Correlación: -0.2169 
+
+--- Regresión simple ---
+
+Call:
+lm(formula = dsr_pct ~ flap_lag, data = df_reg)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.5838 -2.8607  0.3727  1.4421 10.5335 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  4.599105   0.403954  11.385   <2e-16 ***
+flap_lag    -0.005286   0.002047  -2.582   0.0109 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.573 on 135 degrees of freedom
+Multiple R-squared:  0.04706,	Adjusted R-squared:   0.04 
+F-statistic: 6.666 on 1 and 135 DF,  p-value: 0.01089
+

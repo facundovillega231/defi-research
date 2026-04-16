@@ -1,0 +1,39 @@
+=== SPREAD DSR/AAVE COMO PREDICTOR DEL DSR ===
+Fecha: 2026-04-13 
+
+--- Regresión múltiple ---
+
+Call:
+lm(formula = dsr_pct ~ flap_count + spread, data = df_spread)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8046 -1.1594 -0.6465  0.7470 10.5326 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  6.541266   0.319417  20.479  < 2e-16 ***
+flap_count  -0.007725   0.001447  -5.337 6.76e-07 ***
+spread       0.733692   0.091345   8.032 3.09e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.16 on 92 degrees of freedom
+Multiple R-squared:  0.5762,	Adjusted R-squared:  0.567 
+F-statistic: 62.54 on 2 and 92 DF,  p-value: < 2.2e-16
+
+
+--- Correlaciones spread por lag ---
+   lag_semanas  correlacion
+1            1  0.525778117
+2            2  0.477075320
+3            3  0.381626756
+4            4  0.342309661
+5            5  0.304644407
+6            6  0.259305319
+7            7  0.167448594
+8            8  0.108282257
+9            9  0.036685849
+10          10 -0.009918101
+11          11 -0.038582893
+12          12 -0.095737126
