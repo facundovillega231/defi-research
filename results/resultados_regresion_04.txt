@@ -1,0 +1,262 @@
+=== CASCADE LIQUIDATIONS — REGRESIÓN OLS + HURDLE MODEL ===
+Fecha: 2026-04-16 19:48:15 
+Período: ene 2023 – feb 2026 | N = 36
+Obs. excluidas: 2024-03 (delta_dsr=+8.0) y 2025-02 (delta_dsr=-6.5)
+
+N = 36 
+Obs excluidas: 2024-03 (delta_dsr=+8.0) y 2025-02 (delta_dsr=-6.5)
+
+
+% Table created by stargazer v.5.2.3 by Marek Hlavac, Social Policy Institute. E-mail: marek.hlavac at gmail.com
+% Date and time: Thu, Apr 16, 2026 - 19:48:15
+\begin{table}[!htbp] \centering 
+  \caption{Regresión OLS — Submuestra B (ene 2023–feb 2026, N=36)} 
+  \label{tab:reg_submuestraB} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{\Delta DSR\textsubscript{t} (pp)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ log(tab\textsubscript{t-1} + 1) & $-$0.060$^{**}$ & $-$0.060$^{*}$ & $-$0.060$^{**}$ \\ 
+  & (0.029) & (0.034) & (0.025) \\ 
+  & & & \\ 
+ log(tab\textsubscript{t-2} + 1) & 0.001 & 0.001 &  \\ 
+  & (0.031) & (0.031) &  \\ 
+  & & & \\ 
+ n\_kicks\textsubscript{t-1} &  & $-$0.0004 &  \\ 
+  &  & (0.020) &  \\ 
+  & & & \\ 
+ Constante & 0.396 & 0.395 & 0.402 \\ 
+  & (0.357) & (0.360) & (0.299) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+SE robustos & HC3 & HC3 & HC3 \\ 
+Obs. excluidas & mar-2024, feb-2025 & mar-2024, feb-2025 & mar-2024, feb-2025 \\ 
+Observations & 36 & 36 & 36 \\ 
+R$^{2}$ & 0.127 & 0.127 & 0.127 \\ 
+Adjusted R$^{2}$ & 0.075 & 0.046 & 0.102 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{Errores estándar HC3 entre paréntesis. Se excluyen dos episodios de governance discrecional sin cascade previo (mar-2024: $\Delta$DSR=+8.0; feb-2025: $\Delta$DSR=-6.5).} \\ 
+\end{tabular} 
+\end{table} 
+Tabla LaTeX guardada en tabla_regresion_submuestraB.tex
+
+==============================================================================
+                                       Dependent variable:                    
+                    ----------------------------------------------------------
+                                            delta_dsr                         
+                           (1)                (2)                 (3)         
+------------------------------------------------------------------------------
+log_tab_lag1             -0.060**           -0.060*             -0.060**      
+                         (0.029)            (0.034)             (0.025)       
+                                                                              
+log_tab_lag2              0.001              0.001                            
+                         (0.031)            (0.031)                           
+                                                                              
+n_kicks_lag1                                -0.0004                           
+                                            (0.020)                           
+                                                                              
+Constant                  0.396              0.395               0.402        
+                         (0.357)            (0.360)             (0.299)       
+                                                                              
+------------------------------------------------------------------------------
+Observations                36                 36                  36         
+R2                        0.127              0.127               0.127        
+Adjusted R2               0.075              0.046               0.102        
+Residual Std. Error  1.096 (df = 33)    1.113 (df = 32)     1.080 (df = 34)   
+F Statistic         2.410 (df = 2; 33) 1.558 (df = 3; 32) 4.964** (df = 1; 34)
+==============================================================================
+Note:                                              *p<0.1; **p<0.05; ***p<0.01
+
+=== Breusch-Pagan Test (H0: homocedasticidad) ===
+M1 : BP = 2.4477 | p = 0.2941 
+M2 : BP = 2.5555 | p = 0.4653 
+M3 : BP = 0.7077 | p = 0.4002 
+
+=== White Test (términos cuadráticos e interacciones) ===
+M1: W = 3.9758 | p = 0.5529 
+M3: W = 2.0433 | p = 0.36 
+
+=== Breusch-Godfrey Test (lag=2) ===
+M1 : BG = 2.7529 | p = 0.2525 
+M2 : BG = 2.7644 | p = 0.251 
+M3 : BG = 2.7205 | p = 0.2566 
+
+=== Coeficientes con SE Newey-West (HAC, lag=2) ===
+M1:
+
+t test of coefficients:
+
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   0.3956915  0.4092731  0.9668  0.34067  
+log_tab_lag1 -0.0603200  0.0324580 -1.8584  0.07205 .
+log_tab_lag2  0.0012312  0.0275194  0.0447  0.96459  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+M3:
+
+t test of coefficients:
+
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   0.402046   0.384164  1.0465  0.30269  
+log_tab_lag1 -0.059996   0.031400 -1.9107  0.06451 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+=== Distancia de Cook — M3 ===
+Umbral (4/N): 0.1111 
+Observaciones influyentes: 2024-04 2024-11 2024-12 
+    15     22     23 
+0.1208 0.1991 0.1991 
+
+=== Regresión robusta RLM (M-estimator) — M3 ===
+
+Call: rlm(formula = delta_dsr ~ log_tab_lag1, data = panel)
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.76657 -0.30155 -0.05696  0.27097  2.94304 
+
+Coefficients:
+             Value   Std. Error t value
+(Intercept)   0.0570  0.1221     0.4667
+log_tab_lag1 -0.0277  0.0123    -2.2396
+
+Residual standard error: 0.4358 on 34 degrees of freedom
+
+Comparación coeficiente log_tab_lag1:
+  OLS: -0.06 
+  RLM: -0.02766 
+
+
+N total: 36 | N con cambio: 18 
+Períodos con cambio: 2023-06, 2023-07, 2023-08, 2024-04, 2024-05, 2024-07, 2024-08, 2024-10, 2024-11, 2024-12, 2025-01, 2025-03, 2025-04, 2025-05, 2025-06, 2025-08, 2025-09, 2025-10 
+
+=== DISTRIBUCIÓN hubo_cambio ===
+
+ 0  1 
+18 18 
+Proporción con cambio: 0.5 
+
+=== ETAPA 1: Logit — ¿hubo cambio? ===
+
+--- E1-M1 ---
+AIC: 55.24 | McFadden R²: 0.0134 
+
+z test of coefficients:
+
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept)   0.034573   0.565528  0.0611   0.9513
+log_tab_lag1  0.031327   0.052503  0.5967   0.5507
+log_tab_lag2 -0.036994   0.053274 -0.6944   0.4874
+
+
+--- E1-M2 ---
+AIC: 56.51 | McFadden R²: 0.028 
+
+z test of coefficients:
+
+               Estimate Std. Error z value Pr(>|z|)
+(Intercept)   0.1287428  0.5775261  0.2229   0.8236
+log_tab_lag1  0.0023445  0.0630363  0.0372   0.9703
+log_tab_lag2 -0.0455756  0.0544165 -0.8375   0.4023
+n_kicks_lag1  0.0794252  0.1041216  0.7628   0.4456
+
+
+--- E1-M3 ---
+AIC: 53.73 | McFadden R²: 0.0036 
+
+z test of coefficients:
+
+              Estimate Std. Error z value Pr(>|z|)
+(Intercept)  -0.154889   0.494259 -0.3134   0.7540
+log_tab_lag1  0.021275   0.050017  0.4254   0.6706
+
+
+=== ODDS RATIOS — E1-M1 ===
+                OR 2.5 % 97.5 %
+(Intercept)  1.035 0.342  3.136
+log_tab_lag1 1.032 0.931  1.144
+log_tab_lag2 0.964 0.868  1.070
+
+=== PROBABILIDAD PREDICHA por cuartil de log_tab_lag1 ===
+# A tibble: 4 × 4
+  q_lag1           n p_obs p_pred
+  <fct>        <int> <dbl>  <dbl>
+1 0 (inactivo)    15 0.533    0.5
+2 1–10             3 0.333    0.5
+3 10–14            8 0.25     0.5
+4 >14             10 0.7      0.5
+
+=== ETAPA 2: OLS condicional — magnitud del cambio ===
+
+--- E2-M1 ---
+R²: 0.2202 | R² adj: 0.1162 
+
+t test of coefficients:
+
+               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   0.7724413  0.6972805  1.1078  0.28540  
+log_tab_lag1 -0.1023061  0.0509608 -2.0075  0.06306 .
+log_tab_lag2 -0.0075052  0.0557249 -0.1347  0.89465  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+--- E2-M2 ---
+R²: 0.2246 | R² adj: 0.0584 
+
+t test of coefficients:
+
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   0.812488   0.710380  1.1437  0.27191  
+log_tab_lag1 -0.111806   0.060128 -1.8595  0.08411 .
+log_tab_lag2 -0.011819   0.057901 -0.2041  0.84120  
+n_kicks_lag1  0.020509   0.055928  0.3667  0.71932  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+--- E2-M3 ---
+R²: 0.2192 | R² adj: 0.1704 
+
+t test of coefficients:
+
+              Estimate Std. Error t value Pr(>|t|)  
+(Intercept)   0.735115   0.606201  1.2127  0.24286  
+log_tab_lag1 -0.103755   0.044631 -2.3247  0.03357 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+=== RLM condicional (M-estimator) — E2-M3 ===
+
+Call: rlm(formula = delta_dsr ~ log_tab_lag1, data = panel_cambio)
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.54971 -0.67891 -0.06317  0.54945  2.88670 
+
+Coefficients:
+             Value   Std. Error t value
+(Intercept)   0.4289  0.5387     0.7962
+log_tab_lag1 -0.0837  0.0510    -1.6413
+
+Residual standard error: 1.008 on 16 degrees of freedom
+
+Comparación E2 coef. log_tab_lag1:
+  OLS cond.: -0.10375 
+  RLM cond.: -0.08373 
+
+=== Cook's D — E2-M3 ===
+Umbral (4/N): 0.2222 
+Influyentes:  
+named numeric(0)
+
+=== Breusch-Godfrey — Etapa 2 ===
+E2-M1 p = 0.4163 
+E2-M3 p = 0.4248 
