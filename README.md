@@ -4,7 +4,7 @@
 *An (S,s) Model of DeFi Deposit Markets with Non-Discretionary Agents*
 
 Facundo Villega · Investigación Independiente · Análisis On-chain · Abril 2026  
-Working Paper v10 · JEL: E40 · E52 · G20 · G23 · O33
+Working Paper v13 · JEL: E40 · E52 · G20 · G23 · O33
 
 ---
 
@@ -59,15 +59,17 @@ El coeficiente del surplus buffer es negativo y significativo (β = −0.005, p 
 
 Regresión múltiple del DSR sobre el conteo de flap auctions y el spread DSR–AAVE.
 
+**Período:** Julio 2023–Abril 2026 · 95 semanas
+
 **Resultados principales:**
 
 | Variable | Coeficiente | p-value |
 |----------|------------|---------|
 | flap_count | −0.0077 | < 0.001 |
 | spread | 0.7337 | < 0.001 |
-| R² ajustado | 0.567 | — |
+| R² ajustado | 0.576 | — |
 
-El modelo explica el **56.7% de la varianza** del DSR. El spread DSR–AAVE tiene correlación 0.526 con lag de 1 semana, que decae a cero alrededor de la semana 9–10, consistente con una ventana de transmisión de 2–3 meses.
+El modelo explica el **57.6% de la varianza** del DSR. El spread DSR–AAVE tiene correlación 0.526 con lag de 1 semana, que decae a cero alrededor de la semana 9–10, consistente con una ventana de transmisión de 2–3 meses.
 
 ---
 
