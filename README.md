@@ -24,8 +24,10 @@ defi-research/
 ├── .gitignore
 ├── data/
 ├── scripts/
+│   ├── 01_chi_simulation.R
 │   ├── 02_surplus_buffer.R
-│   └── 03_dsr_spread_9.R
+│   ├── 03_dsr_spread_9.R
+│   └── 04_cascade_regression.R
 ├── plots/
 └── results/
 ```
