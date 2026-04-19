@@ -1,0 +1,29 @@
+PIT v14 · A4
+n = 489 
+
+M3: flujo_dsr ~ spread
+
+t test of coefficients:
+
+            Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  2.02829    0.39304  5.1605 3.593e-07 ***
+spread       0.53560    0.15003  3.5698 0.0003926 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.02488567 
+
+M4: flujo_dsr ~ spread + controles
+
+t test of coefficients:
+
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) 0.212199   0.883387  0.2402  0.81027  
+spread      0.018969   0.259029  0.0732  0.94165  
+dsr_pct     0.186350   0.087710  2.1246  0.03412 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.04230361 
