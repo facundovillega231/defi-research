@@ -1,0 +1,10 @@
+PIT v16 · [1.1] · Tabla A1 — δ por criterio de clasificación
+
+                               criterio delta
+1 Hardcoded (direcciones APD conocidas) 0.549
+2           fi >= 1 (frecuencia diaria) 0.740
+3             fi >= 2 (alta frecuencia) 0.564
+
+Nota: fi>=2 (0.564) replica casi exactamente el criterio hardcoded (0.549).
+fi>=1 sobreestima δ al incluir operadores discrecionales de alta frecuencia.
+Rango estimado: 0.549–0.564 excluyendo fi>=1.
