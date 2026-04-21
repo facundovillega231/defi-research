@@ -1,0 +1,45 @@
+PIT v16 · [1.3] · Elasticidades por clase
+
+--- APD_formal (n = 922) ---
+
+t test of coefficients:
+
+            Estimate Std. Error t value  Pr(>|t|)    
+(Intercept)  1.30783    1.51626  0.8625    0.3886    
+dsr_pct      1.67174    0.33483  4.9928 7.118e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.08019361 
+
+--- Discrecional (n = 972) ---
+
+t test of coefficients:
+
+            Estimate Std. Error t value  Pr(>|t|)    
+(Intercept) -0.96238    0.82621 -1.1648    0.2444    
+dsr_pct      1.72887    0.21887  7.8991 7.583e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.2043829 
+
+--- Pooled con interaccion ---
+
+t test of coefficients:
+
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.962378   0.774457 -1.2426   0.2142    
+dsr_pct      1.728868   0.199994  8.6446   <2e-16 ***
+apd_dummy    2.270206   1.546842  1.4676   0.1424    
+dsr_interac -0.057125   0.347212 -0.1645   0.8693    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.1230694 
+
+Nota: dsr_interac no significativo (p=0.869) — elasticidades estadisticamente indistinguibles.
+Evidencia de P3 reside en ratio Ein/Eout = 8.44 (Cuadro 2), no en flujos diarios.
