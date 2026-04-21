@@ -1,0 +1,22 @@
+PIT v16 · [2.2] · Regresión flujos DSR vs spread DSR-SSR
+
+Variable dependiente: flujo_neto_M_DAI (DSR_sDAI)
+Período: sep 2024 – dic 2025 (n = 487 días)
+Spread range: -8.01 -0.75 
+Spread mean: -3.088 
+
+
+t test of coefficients:
+
+            Estimate Std. Error t value Pr(>|t|)  
+(Intercept) -1.87658    0.85286 -2.2003  0.02825 *
+spread      -0.37917    0.18644 -2.0337  0.04253 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+R2: 0.02123049 
+
+Nota: β_spread negativo y significativo (p=0.043) — evidencia de P5.
+Todo el período con spread negativo (DSR < SSR en 487/487 días).
+R2 bajo esperado: hipótesis es sobre signo, no poder predictivo.
