@@ -1,0 +1,15 @@
+PIT v16 · [3.1] · Spells/año vs duración inercia
+
+  anio spells dias_prom
+1 2020     67       5.0
+2 2021     48       6.7
+3 2022     42       8.3
+4 2023     30      11.4
+5 2024     28      12.9
+6 2025     26      13.8
+7 2026      7      16.7
+
+Pearson r: -0.973 p = 2e-04 
+Spearman rho: -1 p = 4e-04 
+
+Nota: correlación monotónica perfecta (rho=-1) — evidencia directa de P3.
